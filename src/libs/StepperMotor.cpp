@@ -42,6 +42,7 @@ StepperMotor::StepperMotor(Pin &step, Pin &dir, Pin &en) : step_pin(step), dir_p
 StepperMotor::~StepperMotor()
 {
     THEKERNEL->unregister_for_event(ON_HALT, this);
+    THEKERNEL->unregister_for_event(ON_SUSPEND, this);
     THEKERNEL->unregister_for_event(ON_ENABLE, this);
 }
 

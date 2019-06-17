@@ -1,3 +1,5 @@
+This is a fork about suspend and resume
+
 Current build status: {{https://travis-ci.org/Smoothieware/Smoothieware.svg?branch=edge}}
 
 ==Overview
